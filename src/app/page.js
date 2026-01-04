@@ -16,7 +16,7 @@ const ClientServicesView = dynamic(() => import("@/components/client-view/servic
 const ClientReviewsView = dynamic(() => import("@/components/client-view/reviews"), { ssr: false });
 
 async function extractAllDatas(currentSection) {
-  const res = await fetch(`https://talha-bajwa.vercel.app/api/${currentSection}/get`, {
+  const res = await fetch(`https://talhabajwa.site/api/${currentSection}/get`, {
     method: "GET",
     cache: "no-store",
   });
